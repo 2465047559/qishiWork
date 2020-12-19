@@ -39,6 +39,20 @@
             <el-menu-item index="2-2" route="/addResource">新增资源</el-menu-item>
           </el-menu-item-group>
         </el-submenu>
+
+<!--        蘑菇丁-->
+        <el-submenu index="3">
+          <template slot="title">
+            <i class="el-icon-chat-line-round"></i>
+            <span>蘑菇丁打卡</span>
+          </template>
+          <el-menu-item-group>
+            <el-menu-item index="3-1" route="/allMoGuDing">所有订单</el-menu-item>
+            <el-menu-item index="3-2" route="/moGuIng">打卡中订单</el-menu-item>
+            <el-menu-item index="3-3" route="/moGuEnd">未打卡订单</el-menu-item>
+            <el-menu-item index="3-4" route="/moGuUpdate">修改过订单</el-menu-item>
+          </el-menu-item-group>
+        </el-submenu>
       </el-menu>
     </div>
   </div>

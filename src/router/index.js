@@ -13,6 +13,13 @@ const WorkEnd = () => import('../views/WorkEnd/WorkEnd');  //已完成作业
 const ShowMyResources = () => import('../views/Resources/ShowMyResources');  //展示所有资源
 const OneResources = () => import('../views/Resources/OneResources');  //当个资源界面
 const AddResource = () => import('../views/Resources/AddResource'); //添加新的资源
+
+//蘑菇丁界面
+const AllMoGuDing = () => import('../views/MoGuDing/AllMoGuDing');  //所有蘑菇丁界面
+const MoGuIng = () => import("../views/MoGuDing/MoGuIng");    //正在打卡的蘑菇丁
+const MoGuEnd = () => import("../views/MoGuDing/MoGuEnd");   //未开始打开的蘑菇丁
+const MoGuUpdate = () => import("../views/MoGuDing/MoGuUpdate"); //界面值发生修改
+const OneMoGuOrder = () => import("../views/MoGuDing/OneMoGuOrder");  //当个蘑菇丁界面
 const routes = [
   {
     name: "WorkIndex",
@@ -71,6 +78,37 @@ const routes = [
     Name: "AddResource",
     path: '/addResource',
     component: AddResource,
+  },
+
+  //所有订单  --- 蘑菇丁
+  {
+    Name: "AllMoGuDing",
+    path: '/allMoGuDing',
+    component: AllMoGuDing,
+  },
+  //正在打卡的蘑菇丁  --- 蘑菇丁
+  {
+    Name: "MoGuIng",
+    path: '/moGuIng',
+    component: MoGuIng,
+  },
+  //未开始打开的蘑菇丁  --- 蘑菇丁
+  {
+    Name: "MoGuEnd",
+    path: '/moGuEnd',
+    component: MoGuEnd,
+  },
+  //界面值发生修改  --- 蘑菇丁
+  {
+    Name: "MoGuUpdate",
+    path: '/moGuUpdate',
+    component: MoGuUpdate,
+  },
+  //单个蘑菇丁界面  --- 蘑菇丁
+  {
+    Name: "OneMoGuOrder",
+    path: '/oneMoGuOrder',
+    component: OneMoGuOrder,
   },
 ]
 
